@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>value</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+      }
+      #d1 {
+        width: 100%;
+        height: 520px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1"></div>
+    <script>
+      function image() {
+        setInterval(show1, 1000);
+        function show1() {
+          document.getElementById("d1").style.backgroundImage = "url(https://th.bing.com/th/id/R.bf2866e88746245984e6369de605ecfb?rik=ezDF1X52RzSzsQ&riu=http%3a%2f%2fwallpaperheart.com%2fwp-content%2fuploads%2f2018%2f08%2fflowers-wallpaper-hd-13.jpg&ehk=7aT12VW2Xl3iN4M3QtW09zzENdSxUCvSUKO673u6jDU%3d&risl=&pid=ImgRaw&r=0)";
+        }
+        setInterval(show2, 2000);
+        function show2() {
+          document.getElementById("d1").style.backgroundImage = "url(https://th.bing.com/th/id/OIP.NOH8bBZLrC_5WpwupOJNkwHaEX?rs=1&pid=ImgDetMain)";
+        }
+        setInterval(show3, 3000);
+        function show3(){
+            document.getElementById("d1").style.backgroundImage = "url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg)"
+        }
+      }
+      image();
+    </script>
+  </body>
+</html>

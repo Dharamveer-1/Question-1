@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            height: 100px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        function digital(){
+            setInterval(show1, 1000)
+            function show1(){
+                document.getElementById("d1").innerHTML= "Current time:" + Date()
+            }
+        }
+        digital();
+    </script>
+</body>
+</html>
